@@ -1,9 +1,13 @@
 ngless "1.0"
 
-input = samfile(ARGV[1], name='MACREL')
+input = samfile(ARGV[1],
+             remove_flags=[256],
+             name="MACREL")
+
 counts = count(input,
     features=["seqname"],
     include_minus1=False,
     normalization={raw})
 
+counts = as_integer(round(counts))
 write(counts, ofile=ARGV[2])
