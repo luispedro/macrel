@@ -1,8 +1,9 @@
 ngless "1.0"
 
 input = samfile(ARGV[1],
-             remove_flags=[256],
              name="MACREL")
+
+filtered = select(input, keep_if=[{unique}])
 
 counts = count(input,
     features=["seqname"],
