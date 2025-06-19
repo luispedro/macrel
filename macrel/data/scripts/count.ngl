@@ -5,10 +5,11 @@ input = samfile(ARGV[1],
 
 filtered = select(input, keep_if=[{unique}])
 
-counts = count(input,
+counts = count(filtered,
     features=["seqname"],
     include_minus1=False,
-    normalization={raw})
+    normalization={raw},
+    multiple={unique_only})
 
 counts = as_integer(round(counts))
 write(counts, ofile=ARGV[2])
