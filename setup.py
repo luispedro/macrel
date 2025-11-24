@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Copyright (C) 2019-2024, MACREL Authors
+# Copyright (C) 2019-2025, MACREL Authors
 # vim: set ts=4 sts=4 sw=4 expandtab smartindent:
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -21,7 +21,6 @@
 #  THE SOFTWARE.
 
 import setuptools
-import os
 
 exec(compile(open('macrel/macrel_version.py').read(),
              'macrel/macrel_version.py', 'exec'))
@@ -50,6 +49,7 @@ classifiers = [
 'Programming Language :: Python :: 3.10',
 'Programming Language :: Python :: 3.11',
 'Programming Language :: Python :: 3.12',
+'Programming Language :: Python :: 3.13',
 'Operating System :: OS Independent',
 'License :: OSI Approved :: MIT License',
 ]
