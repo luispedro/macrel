@@ -1,5 +1,13 @@
 # What's new? (History)
 
+## Version 1.6.0
+
+*Released 24 November 2025*
+
+- Switch to ONNX for model storage. This makes the models more portable between versions
+- Fix float counts in Paladin mapping ([#74](https://github.com/BigDataBiology/macrel/issues/74))
+- Fix some issues in MacOS
+
 ## Version 1.5.0
 
 *Released 20 September 2024*

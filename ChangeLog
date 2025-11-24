@@ -1,5 +1,7 @@
-Unreleased
+Version 1.6.0 2025-11-24
 	* Switch to ONNX for model storage
+	* Fix float counts in Paladin mapping (#74)
+	* Fix some issues in MacOS
 
 Version 1.5.0 2024-09-20
 	* Add support for local searching
